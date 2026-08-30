@@ -1,62 +1,86 @@
 # Adega Medieval Pro
 
 <p align="center">
-  <img src="assets/adega-medieval-pro-cover.svg" alt="Adega Medieval Pro Cover" width="1000" />
+  <img src="assets/adega-medieval-pro-cover.svg" alt="Adega Medieval Pro" width="1000" />
 </p>
 
-Aplicativo de caixa e gestão para adega, com interface moderna, sistema de vendas, controle de estoque e funcionalidade de instalação desktop via Electron.
+<p align="center">
+  <a href="https://github.com/leobeast019/projeto-adega">
+    <img src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white" alt="GitHub Repository" />
+  </a>
+  <img src="https://img.shields.io/badge/Status-Ativo-success" alt="Status" />
+  <img src="https://img.shields.io/badge/Plataforma-Windows%20%7C%20PWA-0078D6" alt="Platform" />
+  <img src="https://img.shields.io/badge/Stack-HTML%20%7C%20JS%20%7C%20Electron-FFB000" alt="Stack" />
+</p>
 
-## ✅ Sobre o projeto
+Sistema de caixa e gestão para adega, com foco em operação local, controle de vendas e acompanhamento de estoque em ambiente desktop e web.
 
-Este projeto foi pensado para auxiliar a operação de uma adega com:
+## Sobre o projeto
 
-- controle de caixa
-- registro de vendas
-- acompanhamento de estoque
+Este projeto foi desenvolvido para facilitar a gestão de uma adega com:
+
+- controle de caixa e fechamento do dia
+- cadastro e acompanhamento de vendas
+- gestão de estoque e produtos
 - uso em desktop com instalação local
 - suporte a versão PWA para navegador
 - funcionamento offline
 
-## 🚀 Instalar no Windows
+## Funcionalidades
 
-1. Copie o arquivo `dist/Adega Medieval Pro Setup 1.0.0.exe` para o computador da adega.
-2. Clique duas vezes no instalador.
-3. Siga as etapas da instalação e escolha se deseja criar um atalho.
-4. Abra o aplicativo pelo menu Iniciar ou pelo atalho da área de trabalho.
+- Painel de operação rápida
+- Registro de vendas
+- Controle de itens e estoque
+- Interface moderna, enxuta e funcional
+- Instalação no Windows via Electron
+- Compatibilidade com uso em navegador
 
-O instalador inclui o Electron e todos os arquivos necessários. Não é preciso instalar
-Python, Node.js ou navegador para usar o aplicativo.
+## Stack utilizada
 
-## 🧩 Versão portátil
+- HTML5
+- CSS3
+- JavaScript
+- Electron
+- PWA
+- Arquivos estáticos para execução local
 
-Se nao quiser instalar, copie a pasta `dist/win-unpacked` inteira e execute
-`Adega Medieval Pro.exe` dentro dela. A pasta inteira deve permanecer junta.
+## Instalação
 
-## 🌐 Versão PWA no navegador
+### Windows
 
-Os arquivos `index.html`, `manifest.webmanifest` e `service-worker.js` continuam
-disponiveis para uso como PWA em um servidor local ou hospedagem web.
+1. Baixe o instalador gerado em `dist`.
+2. Execute o arquivo `.exe`.
+3. Siga as instruções da instalação.
+4. Abra o programa pelo menu Iniciar ou pelo atalho criado.
 
-## ⚠️ Se o instalador for bloqueado pelo Windows
+> O instalador já inclui os arquivos essenciais para execução local, sem necessidade de instalar Python ou navegador.
 
-- Clique em `Mais informações` e depois em `Executar assim mesmo`, caso o Windows
-	exiba o aviso de aplicativo desconhecido.
-- Em computadores corporativos, peça ao administrador para autorizar o instalador.
+### Versão portátil
 
-## 🔒 Importante
+1. Copie a pasta `dist/win-unpacked` inteira.
+2. Execute `Adega Medieval Pro.exe` dentro dela.
+3. Mantenha a pasta completa no mesmo local para evitar falhas de execução.
 
-- Os dados ficam salvos localmente no computador em uso.
-- Para levar os dados para outra máquina, use a função de exportação disponível no app.
+### PWA no navegador
 
-## 📁 Estrutura
+Os arquivos `index.html`, `manifest.webmanifest` e `service-worker.js` podem ser usados em um servidor local ou remoto para acesso via navegador.
+
+## Estrutura do projeto
 
 - `index.html` — interface principal
-- `caixa.js` — lógica da adega
-- `manifest.webmanifest` — configuração PWA
-- `service-worker.js` — cache e funcionamento offline
+- `caixa.js` — lógica do sistema
+- `main.js` — inicialização do Electron
+- `manifest.webmanifest` — configuração do PWA
+- `service-worker.js` — cache offline
 - `icons/` — ícones do app
-- `assets/` — arte visual do projeto e capa do repositório
+- `assets/` — materiais visuais e capa do repositório
 
-## 📝 Observação
+## Importante
 
-Este app salva os dados localmente no navegador do computador em uso. Para uma gestão em rede ou em vários pontos, a próxima etapa é integrar banco de dados e sincronização.
+- Os dados ficam salvos localmente no computador em uso.
+- Para transferir os dados para outra máquina, utilize a função de exportação disponível no sistema.
+- Para gestão em múltiplos pontos ou rede, a próxima etapa é integrar banco de dados e sincronização.
+
+## Observação
+
+Este projeto foi pensado como uma solução prática para operação local de adega, com foco em performance, simplicidade e uso imediato no dia a dia do negócio.
