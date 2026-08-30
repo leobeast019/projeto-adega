@@ -1,0 +1,34 @@
+{
+  "name": "adega-medieval-pro",
+  "version": "1.0.0",
+  "description": "Sistema de caixa e gestão para adega em desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.adega.medievalpro",
+    "productName": "Adega Medieval Pro",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!**/*.zip",
+      "!**/.git/**",
+      "!**/node_modules/**",
+      "!**/dist/**",
+      "!**/.vscode/**"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icons/icon.ico",
+      "signAndEditExecutable": false
+    }
+  },
+  "devDependencies": {
+    "electron": "^31.7.1",
+    "electron-builder": "^25.1.4"
+  }
+}
